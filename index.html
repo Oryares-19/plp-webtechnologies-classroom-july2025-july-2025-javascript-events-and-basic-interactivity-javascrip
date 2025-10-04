@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Settings Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>User Settings ⚙️</h1>
+            <button id="theme-toggle-btn">Toggle Dark Mode</button>
+        </header>
+
+        <section class="card form-section">
+            <h2>Update Your Profile</h2>
+            <form id="profile-form" novalidate>
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter at least 3 characters">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter a valid email">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Must be at least 8 characters">
+                    <div class="error-message"></div>
+                </div>
+                <div class="form-control">
+                    <label for="password-confirm">Confirm Password</label>
+                    <input type="password" id="password-confirm" placeholder="Passwords must match">
+                    <div class="error-message"></div>
+                </div>
+                <button type="submit">Save Changes</button>
+                <div id="form-success-message"></div>
+            </form>
+        </section>
+
+        <section class="card faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How do I change my password?</h3>
+                <div class="faq-answer">
+                    <p>You can change your password using the form above. Just enter your new password and confirm it, then click "Save Changes".</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Is my information secure?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we take security very seriously. All data is transmitted over a secure connection and passwords are encrypted in our database.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What happens when I toggle dark mode?</h3>
+                <div class="faq-answer">
+                    <p>Toggling dark mode changes the color scheme of the interface to a darker theme, which can be easier on the eyes in low-light environments. Your preference is saved in your browser for your next visit.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
